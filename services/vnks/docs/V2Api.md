@@ -654,7 +654,7 @@ Optional parameters are passed through a map[string]interface{}.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**uuid** | **string** | uuid | **lbSubnetNo** | **int32** |  | **igwYn** | **string** |  | 
+**uuid** | **string** | uuid | **lbSubnetNo** | **int32** |  | **lbSubnetNoList** | **[]int32** |  | **igwYn** | **string** |  | 
 
 ### Return type
 

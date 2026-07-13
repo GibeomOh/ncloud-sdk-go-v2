@@ -1671,6 +1671,7 @@ V2ApiService
 @param lbSubnetNo
 @param optional (nil or map[string]interface{}) with one or more of:
 
+	@param "lbSubnetNoList" ([]int32)
 	@param "igwYn" (string)
 
 @return *UpdateClusterLbSubnetRes
@@ -1691,10 +1692,16 @@ func (a *V2ApiService) ClustersUuidLbSubnetPatch(ctx context.Context, uuid *stri
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
+	if err := typeCheckParameter(localVarOptionals["lbSubnetNoList"], "*[]int32", "lbSubnetNoList"); err != nil {
+		return &successPayload, err
+	}
 	if err := typeCheckParameter(localVarOptionals["igwYn"], "*string", "igwYn"); err != nil {
 		return &successPayload, err
 	}
 
+	if localVarTempParam, localVarOk := localVarOptionals["lbSubnetNoList"].(*[]int32); localVarOk {
+		localVarQueryParams.Add("lbSubnetNoList", parameterToString(*localVarTempParam, "csv"))
+	}
 	if localVarTempParam, localVarOk := localVarOptionals["igwYn"].(*string); localVarOk {
 		localVarQueryParams.Add("igwYn", parameterToString(*localVarTempParam, ""))
 	}

@@ -81,6 +81,7 @@ Class | Method | HTTP request | Description
  - [Cluster](docs/Cluster.md)
  - [ClusterAccessEntriesRes](docs/ClusterAccessEntriesRes.md)
  - [ClusterAccessEntryRes](docs/ClusterAccessEntryRes.md)
+ - [ClusterAddonCreateInstallParamDto](docs/ClusterAddonCreateInstallParamDto.md)
  - [ClusterAddonRes](docs/ClusterAddonRes.md)
  - [ClusterAddonsRes](docs/ClusterAddonsRes.md)
  - [ClusterInputBody](docs/ClusterInputBody.md)

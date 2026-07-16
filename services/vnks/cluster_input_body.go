@@ -78,4 +78,7 @@ type ClusterInputBody struct {
 
 	// 추가 노드풀
 	NodePool []*NodePoolDto `json:"nodePool,omitempty"`
+
+	// 클러스터 생성 시 함께 설치할 Addon 목록
+	Addons []*ClusterAddonCreateInstallParamDto `json:"addons,omitempty"`
 }

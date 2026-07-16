@@ -27,6 +27,7 @@ Name | Type | Description | Notes
 **BootstrapAccessEntry** | ***bool** | 클러스터 생성 시 bootstrap access entry 자동 생성 여부 | [optional] [default to null]
 **DefaultNodePool** | **[*DefaultNodePoolParam](DefaultNodePoolParam.md)** |  | [optional] [default to null]
 **NodePool** | **[[]\*NodePoolDto](NodePoolDto.md)** | 추가 노드풀 | [optional] [default to null]
+**Addons** | **[[]\*ClusterAddonCreateInstallParamDto](ClusterAddonCreateInstallParamDto.md)** | 클러스터 생성 시 함께 설치할 Addon 목록 | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
